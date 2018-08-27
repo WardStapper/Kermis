@@ -10,7 +10,7 @@ public class Ladderklimmen extends Attractie implements GokAttractie {
 
 
     }
-
+//
     public void ritjes(){
         System.out.println("Het totaal aantal ritjes bij de Ladderklimmen is " + ritjes );
     }
@@ -35,6 +35,6 @@ public class Ladderklimmen extends Attractie implements GokAttractie {
 
     @Override
     public void kansSpelBelastingBetaling() {
-        
+
     }
 }
