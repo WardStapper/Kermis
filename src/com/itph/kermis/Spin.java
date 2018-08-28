@@ -1,12 +1,18 @@
 package com.itph.kermis;
 
-public class Spin extends Attractie {
+import java.awt.image.renderable.RenderableImage;
+
+public class Spin extends RisicoRijkeAttracties {
     static double omzet;
     int ritjes;
 
+
     public void draaien(){
         System.out.println("Spin is go!");
-
+        opstellingsKeuring();
+        spinCount += 1;
+        System.out.println("Momenteel is de spinCount " + spinCount);
+        draaiLimiet();
 
     }
     public void ritjes(){
@@ -26,6 +32,50 @@ public class Spin extends Attractie {
     }
     public void omzet(){
         System.out.println("De omzet bij Spin is in totaal: " + omzet);
+
+
+    }
+
+
+
+    public void draaiLimiet() {
+        System.out.println("Draailimiet doet in ieder geval iets!");
+        if (spinCount != 0 && spinCount == 6) {
+            System.out.println("Waarschuwing: U moet  de Spin laten repareren!");
+            System.out.println("Wat wilt u nu doen? Druk m voor repareren, c om door te gaan");
+            String repair = sc.nextLine();
+            repair = repair.toLowerCase();
+
+            try {
+                throw new Exception();
+
+            }
+            catch (NumberFormatException draaiLimiet){
+                draaiLimiet.printStackTrace();
+                System.out.println("U heeft een nummer ingevoerd ipv een letter, jammer!");
+
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+                System.out.println("Probleem opgevangen van Spin!!");
+            }
+
+
+            if (repair.equals("m")) {
+                spinCount = 0;
+                System.out.println("Uw attractie is gerepareerd!");
+
+            } else if (repair.equals("c")) {
+
+
+            }
+
+        }
+
+
+    }
+
+    public void belastingBetalon(){
 
 
     }

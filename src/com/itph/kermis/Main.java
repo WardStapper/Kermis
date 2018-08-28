@@ -39,6 +39,9 @@ public class Main {
        }else if(input.equals("q")){
            System.out.println("U heeft ervoor gekozen de kermis te verlaten, tot ziens!");
            System.exit(0);
+       }else if(input.equals("b")){
+           System.out.println("Oké, u heeft de belastinginspecteur aangeroepen!");
+           kassa.belastingKnakkerRoepen();
        }
 
 

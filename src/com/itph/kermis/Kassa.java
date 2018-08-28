@@ -3,16 +3,17 @@ package com.itph.kermis;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Kassa implements GokAttractie {
+public class Kassa  {
 
+    Belastinginspecteur belasting = new Belastinginspecteur();
     Scanner sc = new Scanner(System.in);
-    //Kassa kassa = new Kassa();
     static double totaalomzet = 0;
     static int ritjes = 0;
+    static double belastingen = 0;
 
     int keuzeNummer;
 
-    ArrayList<Attractie> attractie = new ArrayList<>();
+   static  ArrayList<Attractie> attractie = new ArrayList<>();
 
     public Kassa(){
 
@@ -37,7 +38,7 @@ public class Kassa implements GokAttractie {
     public void maakKeuze(){
         System.out.println("Maak een keuze 1-6");
 
-        for (int a = 0;a<6;a++){
+        for (int a = 0;a<attractie.size();a++){
             System.out.println("Kies " + (a+1) + " voor attractie " + attractie.get(a).getClass().getSimpleName());
           }
         keuzeNummer = sc.nextInt()-1;
@@ -49,6 +50,8 @@ public class Kassa implements GokAttractie {
 
     public void totaalOmzet(){
         System.out.println("De totaalomzet is momenteel " + totaalomzet);
+        System.out.println("Nadat er belasting af is gegaan is dit " + (totaalomzet - belastingen));
+        System.out.println("U heeft in totaal " + Kassa.belastingen + " belasting moeten betalen. " );
 
     }
     public void totaalRitjes(){
@@ -67,6 +70,12 @@ public void ritjesPerAttractie(){
             attractie.get(a).omzet();
         }
     }
+
+    public void belastingKnakkerRoepen(){
+        belasting.belastingHeffen(attractie);
+
+    }
+
     }
 
 

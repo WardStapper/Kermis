@@ -1,6 +1,6 @@
 package com.itph.kermis;
 
-public abstract class Attractie implements GokAttractie{
+public abstract class Attractie {
 
     public Attractie(){
 
@@ -9,7 +9,7 @@ public abstract class Attractie implements GokAttractie{
 
 
 
-    public void draaien(){
+   public void draaien(){
 
 
     }
@@ -23,6 +23,8 @@ public abstract class Attractie implements GokAttractie{
 
 
     }
+
+
 
 
 
