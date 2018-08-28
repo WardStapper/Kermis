@@ -1,6 +1,7 @@
 package com.itph.kermis;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Kassa  {
@@ -36,18 +37,35 @@ public class Kassa  {
 
     }
 
-    public void maakKeuze(){
+    public void maakKeuze (){
         System.out.println("Maak een keuze 1-6");
 
         for (int a = 0;a<attractie.size();a++){
             System.out.println("Kies " + (a+1) + " voor attractie " + attractie.get(a).getClass().getSimpleName());
           }
-        keuzeNummer = sc.nextInt()-1;
+
+          keuzeNummer = sc.nextInt()-1;
+
+/*        try{
+
+
+            throw new InputMismatchException();
+
+        }catch(InputMismatchException maakKeuze){
+            keuzeNummer = 6;
+
+            System.out.println("U heeft geen goede keuze gemaakt!");
+
+        }*/
+
         attractie.get(keuzeNummer).draaien();
         attractie.get(keuzeNummer).betalen();
 
+        }
 
-    }
+
+
+
 
     public void totaalOmzet(){
         System.out.println("De totaalomzet is momenteel " + totaalomzet);

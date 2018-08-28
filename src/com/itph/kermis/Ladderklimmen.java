@@ -10,10 +10,9 @@ public class Ladderklimmen extends Attractie implements GokAttractie {
         System.out.println("De attractie ladderklimmen draait!");
 
         kansSpelBelastingBetaling();
-    Kassa.inspecteur +=1;
-    System.out.println("Inspecteurpunten");
-    }
-//
+    Belastinginspecteur.inspecteur +=1;
+       }
+
     public void ritjes(){
         System.out.println("Het totaal aantal ritjes bij de Ladderklimmen is " + ritjes );
     }
@@ -45,7 +44,6 @@ public class Ladderklimmen extends Attractie implements GokAttractie {
     public void kansSpelBelastingBetaling() {
 
     Kassa.belastingen +=1.5;
-    System.out.println("U heeft zojuist kansspelbelasting moeten lappen!");
     this.omzet -=1.5;
 
 

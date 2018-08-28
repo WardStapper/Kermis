@@ -11,7 +11,7 @@ public class Hawaii extends RisicoRijkeAttracties {
         opstellingsKeuring();
         hawaiiCount +=1;
         draaiLimiet();
-        Kassa.inspecteur +=1;
+        Belastinginspecteur.inspecteur +=1;
         System.out.println("Inspecteurpunten");
 
 
@@ -37,7 +37,7 @@ public class Hawaii extends RisicoRijkeAttracties {
     }
 
     public void draaiLimiet(){
-        if (hawaiiCount !=0 || hawaiiCount % 11  ==0){
+        if (hawaiiCount !=0 || hawaiiCount % 10 ==0){
             System.out.println("Waarschuwing: U moet de Hawaii laten repareren! ");
             System.out.println("Wat wilt u nu doen? Druk m voor repareren, c om door te gaan");
             String repair = sc.next();

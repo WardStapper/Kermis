@@ -7,6 +7,7 @@ public class Spiegelpaleis extends Attractie {
 
     public void draaien(){
         System.out.println("Welkom in het spiegelpaleis!");
+        Belastinginspecteur.inspecteur +=1;
 
 
 }

@@ -6,6 +6,7 @@ public class Spookhuis extends Attractie {
     public void draaien(){
 
         System.out.println("Spookhuis r go!");
+        Belastinginspecteur.inspecteur +=1;
 
 
     }

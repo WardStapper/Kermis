@@ -14,8 +14,8 @@ public class Spin extends RisicoRijkeAttracties implements GokAttractie {
         System.out.println("Momenteel is de spinCount " + spinCount);
         draaiLimiet();
         kansSpelBelastingBetaling();
-        Kassa.inspecteur +=1;
-        System.out.println("Inspecteurpunten");
+        Belastinginspecteur.inspecteur +=1;
+
     }
     public void ritjes(){
         System.out.println("Het totaal aantal ritjes bij de Spin is " + ritjes );
