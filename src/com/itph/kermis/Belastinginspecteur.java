@@ -16,5 +16,12 @@ public class Belastinginspecteur {
 
     }
 
+    public void randomLangsgaan(){
+
+       
+    }
+
+
+
 
 }

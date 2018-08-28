@@ -10,6 +10,8 @@ public class Ladderklimmen extends Attractie implements GokAttractie {
         System.out.println("De attractie ladderklimmen draait!");
 
         kansSpelBelastingBetaling();
+    Kassa.inspecteur +=1;
+    System.out.println("Inspecteurpunten");
     }
 //
     public void ritjes(){

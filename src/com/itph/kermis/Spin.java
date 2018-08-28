@@ -2,7 +2,7 @@ package com.itph.kermis;
 
 import java.awt.image.renderable.RenderableImage;
 
-public class Spin extends RisicoRijkeAttracties {
+public class Spin extends RisicoRijkeAttracties implements GokAttractie {
     static double omzet;
     int ritjes;
 
@@ -13,7 +13,9 @@ public class Spin extends RisicoRijkeAttracties {
         spinCount += 1;
         System.out.println("Momenteel is de spinCount " + spinCount);
         draaiLimiet();
-
+        kansSpelBelastingBetaling();
+        Kassa.inspecteur +=1;
+        System.out.println("Inspecteurpunten");
     }
     public void ritjes(){
         System.out.println("Het totaal aantal ritjes bij de Spin is " + ritjes );
@@ -67,6 +69,7 @@ public class Spin extends RisicoRijkeAttracties {
 
             } else if (repair.equals("c")) {
 
+                System.out.println("U gaat nu door!");
 
             }
 
@@ -75,8 +78,13 @@ public class Spin extends RisicoRijkeAttracties {
 
     }
 
-    public void belastingBetalon(){
 
+    @Override
+    public void kansSpelBelastingBetaling() {
+        Kassa.belastingen +=1.575;
+        System.out.println("U heeft zojuist kansspelbelasting moeten lappen!");
+        this.omzet -=0.675;
 
     }
 }
+

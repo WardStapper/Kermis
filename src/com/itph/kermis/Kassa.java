@@ -10,6 +10,7 @@ public class Kassa  {
     static double totaalomzet = 0;
     static int ritjes = 0;
     static double belastingen = 0;
+    static int inspecteur = 0;
 
     int keuzeNummer;
 

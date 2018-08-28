@@ -9,14 +9,13 @@ public class Bezoeker {
         boolean stopKermis = false;
 
 
-    public void startBezoek() {
+    public void bezoekje() {
         while (!stopKermis) {
             System.out.println("Welkom op de kermis, maak een keuze uit onderstaand menu: ");
 
             kassa.maakKeuze();
-        }
-    }
-     public void bezoekKeuze(){
+
+
             System.out.println("Toets o voor een overzicht van de totaalomzet. Toets k voor het totaal aantal kaartjes, toets v om verder te gaan, toets q om af te sluiten, b voor belastingdienst");
 
             String input = sc.nextLine();
@@ -43,10 +42,11 @@ public class Bezoeker {
                 kassa.belastingKnakkerRoepen();
             } else {
                 System.out.println("Dit is een ongeldige invoer, probeer nog een keer!");
+
             }
 
         }
-
+    }
 
         }
 

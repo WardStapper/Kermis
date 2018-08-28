@@ -11,6 +11,8 @@ public class Hawaii extends RisicoRijkeAttracties {
         opstellingsKeuring();
         hawaiiCount +=1;
         draaiLimiet();
+        Kassa.inspecteur +=1;
+        System.out.println("Inspecteurpunten");
 
 
     }
@@ -56,7 +58,7 @@ public class Hawaii extends RisicoRijkeAttracties {
                 System.out.println("Uw attractie is gerepareerd!");
 
             } else if (repair.equals("c")) {
-
+                System.out.println("U gaat nu door!");
 
             }
 

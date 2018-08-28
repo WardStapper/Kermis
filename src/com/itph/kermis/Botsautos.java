@@ -8,6 +8,8 @@ public class Botsautos extends Attractie {
 
     public void draaien(){
         System.out.println("Botsautos gaan!");
+        Kassa.inspecteur +=1;
+        System.out.println("Inspecteurpuntenhoeveelheid is " + Kassa.inspecteur);
 
 
     }
