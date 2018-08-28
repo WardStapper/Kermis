@@ -18,7 +18,7 @@ public class Main {
 
 
 
-       System.out.println("Toets o voor een overzicht van de totaalomzet. Toets k voor het totaal aantal kaartjes, toets v om verder te gaan, toets q om af te sluiten");
+       System.out.println("Toets o voor een overzicht van de totaalomzet. Toets k voor het totaal aantal kaartjes, toets v om verder te gaan, toets q om af te sluiten, b voor belastingdienst");
 
        String input = sc.nextLine();
        input = input.toLowerCase();
