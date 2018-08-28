@@ -41,6 +41,8 @@ public class Bezoeker {
             } else if (input.equals("b")) {
                 System.out.println("Oké, u heeft de belastinginspecteur aangeroepen!");
                 kassa.belastingKnakkerRoepen();
+            } else {
+                System.out.println("Dit is een ongeldige invoer, probeer nog een keer!");
             }
 
         }
@@ -48,6 +50,6 @@ public class Bezoeker {
 
         }
 
-    
+
 
 
