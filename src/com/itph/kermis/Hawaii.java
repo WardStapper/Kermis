@@ -8,6 +8,7 @@ public class Hawaii extends Attractie {
 
     public void draaien() {
         System.out.println("Welkom in de Hawaii!");
+        opstellingsKeuring();
 
 
     }
@@ -30,4 +31,10 @@ public class Hawaii extends Attractie {
 
 
     }
+
+    public boolean opstellingsKeuring(){
+
+        return true;
+    }
+
 }
