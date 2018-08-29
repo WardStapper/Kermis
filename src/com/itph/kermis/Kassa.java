@@ -37,7 +37,7 @@ public class Kassa  {
 
     }
 
-    public void maakKeuze (){
+    public void maakKeuze (){   //mogelijk hier een waarschuwing gooien dat ie een exception kan throwen? Probleem is dat ie dan een return type nodig heeft
         System.out.println("Maak een keuze 1-6");
 
         for (int a = 0;a<attractie.size();a++){
