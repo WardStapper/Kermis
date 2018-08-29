@@ -44,19 +44,18 @@ public class Kassa  {
             System.out.println("Kies " + (a+1) + " voor attractie " + attractie.get(a).getClass().getSimpleName());
           }
 
-          keuzeNummer = sc.nextInt()-1;
+        
+        try{
 
-/*        try{
+            keuzeNummer = sc.nextInt()-1;
+            throw new Exception();
 
-
-            throw new InputMismatchException();
-
-        }catch(InputMismatchException maakKeuze){
-            keuzeNummer = 6;
+        }catch (Exception maakKeuze){
+            keuzeNummer = 1;
 
             System.out.println("U heeft geen goede keuze gemaakt!");
 
-        }*/
+        }
 
         attractie.get(keuzeNummer).draaien();
         attractie.get(keuzeNummer).betalen();
