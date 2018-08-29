@@ -44,11 +44,12 @@ public class Kassa  {
             System.out.println("Kies " + (a+1) + " voor attractie " + attractie.get(a).getClass().getSimpleName());
           }
 
-        
+          keuzeNummer = sc.nextInt()-1;
+
         try{
 
-            keuzeNummer = sc.nextInt()-1;
-            throw new Exception();
+
+            throw new Exception();  //Hier zit sowiso het probleem, deze gooitie altijd
 
         }catch (Exception maakKeuze){
             keuzeNummer = 1;
